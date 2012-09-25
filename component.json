@@ -1,0 +1,12 @@
+{
+  "name": "relative-date",
+  "repo": "component/relative-date",
+  "description": "Relative dates in words",
+  "version": "0.0.1",
+  "keywords": ["date", "relative", "utility"],
+  "dependencies": {},
+  "development": {},
+  "scripts": [
+    "index.js"
+  ]
+}
