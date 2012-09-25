@@ -32,7 +32,6 @@ var str = relative(new Date) || 'just now';
 var str = relative(new Date);
 if (str) str = 'assignment due in ' + str;
 else str = 'assignment due';
-
 // => "assignment due"
 ```
 

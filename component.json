@@ -1,7 +1,7 @@
 {
   "name": "relative-date",
   "repo": "component/relative-date",
-  "description": "Relative dates in words",
+  "description": "Relative date in words",
   "version": "0.0.1",
   "keywords": ["date", "relative", "utility"],
   "dependencies": {},
