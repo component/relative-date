@@ -7,6 +7,18 @@
 
     $ component install component/relative-date
 
+## Example
+
+```js
+var date = new Date(Date.now() - 60000);
+console.log(relative(date) + ' ago');
+// => "one minute ago"
+
+var date = new Date(Date.now() + 5 * 60000);
+console.log(relative(date) + ' from now');
+// => "5 minutes from now"
+```
+
 ## API
 
 ### relative(date)
