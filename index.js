@@ -29,7 +29,7 @@ var month = year / 12;
 
 function relative(date, other) {
   other = other || new Date;
-  var ms = date - other;
+  var ms = Math.abs(other - date);
 
   if (ms < second) return '';
 
