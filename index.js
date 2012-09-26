@@ -37,19 +37,19 @@ function relative(date, other) {
   if (ms < minute) return Math.ceil(ms / second) + ' seconds';
 
   if (ms == minute) return 'one minute';
-  if (ms < hour) return Math.round(ms / minute) + ' minutes';
+  if (ms < hour) return Math.ceil(ms / minute) + ' minutes';
 
   if (ms == hour) return 'one hour';
-  if (ms < day) return Math.round(ms / hour) + ' hours';
+  if (ms < day) return Math.ceil(ms / hour) + ' hours';
 
   if (ms == day) return 'one day';
   if (ms < week) return Math.ceil(ms / day) + ' days';
 
   if (ms == week) return 'one week';
-  if (ms < month) return Math.round(ms / week) + ' weeks';
+  if (ms < month) return Math.ceil(ms / week) + ' weeks';
 
   if (ms == month) return 'one month';
-  if (ms < year) return Math.round(ms / month) + ' months';
+  if (ms < year) return Math.ceil(ms / month) + ' months';
 
   if (ms == year) return 'one year';
   return Math.round(ms / year) + ' years';
