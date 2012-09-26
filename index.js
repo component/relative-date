@@ -39,6 +39,9 @@ function relative(date, other) {
   if (ms == minute) return 'one minute';
   if (ms < hour) return Math.round(ms / minute) + ' minutes';
 
+  if (ms == hour) return 'one hour';
+  if (ms < day) return Math.round(ms / hour) + ' hours';
+
   if (ms == day) return 'one day';
   if (ms < week) return Math.ceil(ms / day) + ' days';
 
