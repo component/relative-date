@@ -3,10 +3,15 @@
   "repo": "component/relative-date",
   "description": "Relative date in words",
   "version": "0.0.4",
-  "keywords": ["date", "relative", "utility"],
+  "keywords": [
+    "date",
+    "relative",
+    "utility"
+  ],
   "dependencies": {},
   "development": {},
   "scripts": [
     "index.js"
-  ]
+  ],
+  "license": "MIT"
 }
