@@ -2,12 +2,20 @@
   "name": "relative-date-component",
   "description": "Relative date in words",
   "version": "0.0.4",
-  "keywords": ["date", "relative", "utility"],
+  "keywords": [
+    "date",
+    "relative",
+    "utility"
+  ],
   "dependencies": {},
   "development": {},
   "component": {
     "scripts": {
       "relative-date/index.js": "index.js"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/relative-date.git"
   }
 }
