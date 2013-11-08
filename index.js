@@ -1,5 +1,11 @@
 
 /**
+ * Dependencies
+ */
+
+var _ = require('t');
+
+/**
  * Expose `relative`.
  */
 
@@ -33,24 +39,24 @@ function relative(date, other) {
 
   if (ms < second) return '';
 
-  if (ms == second) return 'one second';
-  if (ms < minute) return Math.ceil(ms / second) + ' seconds';
+  if (ms == second) return _('one second');
+  if (ms < minute) return _('{s} seconds', {s: Math.ceil(ms / second)});
 
-  if (ms == minute) return 'one minute';
-  if (ms < hour) return Math.ceil(ms / minute) + ' minutes';
+  if (ms == minute) return _('one minute');
+  if (ms < hour) return _('{m} minutes', {m: Math.ceil(ms / minute)});
 
-  if (ms == hour) return 'one hour';
-  if (ms < day) return Math.ceil(ms / hour) + ' hours';
+  if (ms == hour) return _('one hour');
+  if (ms < day) return _('{h} hours', {h: Math.ceil(ms / hour)});
 
-  if (ms == day) return 'one day';
-  if (ms < week) return Math.ceil(ms / day) + ' days';
+  if (ms == day) return _('one day');
+  if (ms < week) return _('{d} days', {d: Math.ceil(ms / day)});
 
-  if (ms == week) return 'one week';
-  if (ms < month) return Math.ceil(ms / week) + ' weeks';
+  if (ms == week) return _('one week');
+  if (ms < month) return _('{w} weeks', {w: Math.ceil(ms / week)});
 
-  if (ms == month) return 'one month';
-  if (ms < year) return Math.ceil(ms / month) + ' months';
+  if (ms == month) return _('one month');
+  if (ms < year) return _('{mo} months', {mo: Math.ceil(ms / month)});
 
-  if (ms == year) return 'one year';
-  return Math.round(ms / year) + ' years';
+  if (ms == year) return _('one year');
+  return _('{y} years', {y: Math.round(ms / year)});
 }

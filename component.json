@@ -8,7 +8,9 @@
     "relative",
     "utility"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "component/t": "*"
+  },
   "development": {},
   "scripts": [
     "index.js"
