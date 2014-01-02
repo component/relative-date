@@ -7,7 +7,9 @@
     "relative",
     "utility"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "t-component": "*"
+  },
   "development": {},
   "component": {
     "scripts": {
